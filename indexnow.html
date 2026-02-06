@@ -1,0 +1,100 @@
+<script>
+    window.location.replace("/index.php");
+</script>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Makrisystem | IndexNow Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Meta tag to prevent indexing -->
+    <meta name="robots" content="noindex, nofollow">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-6">
+
+  <div class="bg-white shadow-xl rounded-2xl w-full max-w-3xl p-8">
+    <h1 class="text-3xl font-bold text-center text-indigo-600 mb-2">Makrisystem - IndexNow Dashboard</h1>
+    <p class="text-gray-600 text-center mb-6">Indexa tus URLs en Bing, Yahoo, Yandex y Seznam fácilmente.</p>
+
+    <label class="block mb-2 text-gray-700 font-semibold">Introduce tus URLs (una por línea):</label>
+    <textarea id="urls" class="w-full border border-gray-300 rounded-lg p-3 focus:ring focus:ring-indigo-200 focus:border-indigo-400 h-40" placeholder="https://makrisystem.com/ejemplo1&#10;https://makrisystem.com/ejemplo2"></textarea>
+
+    <div class="flex flex-col sm:flex-row gap-3 mt-6">
+      <button id="sendBtn" class="flex-1 bg-indigo-600 text-white font-semibold py-3 rounded-lg hover:bg-indigo-700 transition duration-200">
+        🚀 Enviar URLs
+      </button>
+      <button id="clearBtn" class="flex-1 bg-gray-300 text-gray-700 font-semibold py-3 rounded-lg hover:bg-gray-400 transition duration-200">
+        🗑️ Limpiar historial
+      </button>
+    </div>
+
+    <div id="result" class="mt-4 text-center text-sm text-gray-700"></div>
+
+    <div class="mt-8">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">📜 Historial</h2>
+      <ul id="historyList" class="text-sm text-gray-700 space-y-1 max-h-60 overflow-y-auto border border-gray-200 rounded-lg p-3 bg-gray-50"></ul>
+    </div>
+  </div>
+
+  <script>
+    const STORAGE_KEY = "makrisystem_history";
+    const resultDiv = document.getElementById("result");
+    const historyList = document.getElementById("historyList");
+    const sendBtn = document.getElementById("sendBtn");
+    const clearBtn = document.getElementById("clearBtn");
+
+    let history = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+    renderHistory();
+
+    sendBtn.addEventListener("click", async () => {
+      const urls = document.getElementById("urls").value.split(/[\n,]+/).map(u => u.trim()).filter(u => u);
+      if (urls.length === 0) {
+        resultDiv.innerHTML = "<span class='text-red-600'>❌ Ingresa al menos una URL.</span>";
+        return;
+      }
+
+      resultDiv.innerHTML = "⏳ Enviando...";
+
+      try {
+        const res = await fetch("send.php", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ urls })
+        });
+        const data = await res.json();
+
+        if (data.success) {
+          const timestamp = new Date().toLocaleString();
+          urls.forEach(u => history.unshift({ url: u, date: timestamp }));
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(history));
+          renderHistory();
+
+          resultDiv.innerHTML = `<span class="text-green-700 font-semibold">✅ ${data.message}</span>`;
+        } else {
+          resultDiv.innerHTML = `<span class="text-red-700 font-semibold">⚠️ ${data.message}</span>`;
+        }
+      } catch (err) {
+        resultDiv.innerHTML = `<span class="text-red-600">❌ Error: ${err.message}</span>`;
+      }
+    });
+
+    clearBtn.addEventListener("click", () => {
+      if (confirm("¿Borrar historial?")) {
+        localStorage.removeItem(STORAGE_KEY);
+        history = [];
+        renderHistory();
+      }
+    });
+
+    function renderHistory() {
+      historyList.innerHTML = history.length === 0
+        ? `<li class="text-gray-400 text-center">Sin historial aún.</li>`
+        : history.map(h => `<li class="border-b border-gray-200 pb-1">${h.url}<br><span class="text-xs text-gray-500">${h.date}</span></li>`).join("");
+    }
+  </script>
+
+<script src="js/noclick.js"></script>
+</body>
+</html>

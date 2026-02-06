@@ -1,0 +1,6 @@
+# Permite el acceso a todos los rastreadores
+User-agent: *
+Allow: /
+
+# Ubicación del Sitemap
+Sitemap: https://makrisystem.com/sitemap.xml

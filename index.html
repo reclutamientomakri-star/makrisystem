@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="canonical" href="https://makrisystem.com/index.html">
+    <link rel="alternate" hreflang="es" href="https://makrisystem.com/index.html">
+    <link rel="alternate" hreflang="en" href="https://makrisystem.com/en/index.html">
+    <link rel="alternate" hreflang="x-default" href="https://makrisystem.com/index.html">
+
+    <link rel="shortcut icon" href="https://i.postimg.cc/d32v1kW9/ico.jpg" type="image/x-icon">
+    
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">  
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Makrisystem | Servicios de Outsourcing Empresarial</title>
+    <meta name="description" content="Descubre los servicios de outsourcing empresarial de Makrisystem. Llevamos tu empresa al siguiente nivel con soluciones de tercerización a medida.">
+    <meta name="keywords" content="outsourcing talento latinoamérica, servicios outsourcing, atención al cliente remota, asistente virtual remoto, contratar talento latinoamericano, nearshore outsourcing, outsourcing calificado, talento bilingüe remoto, contact center nearshore">
+
+    <meta property="og:url" content="https://makrisystem.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Makrisystem | Servicios de Outsourcing Empresarial">
+    <meta property="og:description" content="Descubre los servicios de outsourcing empresarial de Makrisystem. Llevamos tu empresa al siguiente nivel con soluciones de tercerización a medida.">
+    <meta property="og:image" content="https://i.postimg.cc/Fsq6ksSH/ogg.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="makrisystem.com">
+    <meta property="twitter:url" content="https://makrisystem.com">
+    <meta name="twitter:title" content="Makrisystem | Servicios de Outsourcing Empresarial">
+    <meta name="twitter:description" content="Descubre los servicios de outsourcing empresarial de Makrisystem. Llevamos tu empresa al siguiente nivel con soluciones de tercerización a medida.">
+    <meta name="twitter:image" content="https://i.postimg.cc/Fsq6ksSH/ogg.jpg">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LNH1NXPVTJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LNH1NXPVTJ');
+  </script>
+</head>
+
+<body class="text-gray-700">
+
+    <div id="form-success" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-green-600 text-white text-center p-8 rounded-xl shadow-2xl z-[60] transition-opacity duration-300 opacity-0 pointer-events-none">
+        <h3 class="text-2xl font-bold mb-2">¡Enviado!</h3>
+        <p>Redirigiendo a WhatsApp para completar tu solicitud...</p>
+    </div>
+    <div id="form-error" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-600 text-white text-center p-8 rounded-xl shadow-2xl z-[60] transition-opacity duration-300 opacity-0 pointer-events-none">
+        <h3 class="text-2xl font-bold mb-2">¡Error!</h3>
+        <p id="error-message-text">Hubo un problema. Inténtalo de nuevo.</p>
+    </div>
+
+    <div id="float-form-container" class="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center p-4 transition-opacity duration-300 opacity-0 pointer-events-none">
+        <div id="float-form-card" class="bg-white p-8 rounded-lg shadow-2xl text-gray-800 w-full max-w-2xl relative transform scale-95 transition-transform duration-300 max-h-[90vh] overflow-y-auto">
+            <button id="close-float-form" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800 text-3xl z-10">&times;</button>
+            <h2 class="text-2xl font-bold text-base mb-6">Solicitar Servicio</h2>
+            <form id="float-contact-form" novalidate>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label for="first-name" class="block text-sm font-medium mb-1">Nombre <span class="text-red-500">*</span></label>
+                        <input type="text" id="first-name" name="first-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary" placeholder="Nombres" required>
+                        <p class="text-red-500 text-sm mt-1 hidden">Campo requerido.</p>
+                    </div>
+                    <div>
+                        <label for="last-name" class="block text-sm font-medium mb-1">Apellido <span class="text-red-500">*</span></label>
+                        <input type="text" id="last-name" name="last-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary" placeholder="Apellidos" required>
+                        <p class="text-red-500 text-sm mt-1 hidden">Campo requerido.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label for="float-company" class="block text-sm font-medium mb-1">Empresa <span class="text-red-500">*</span></label>
+                        <input type="text" id="float-company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary" placeholder="Nombre de tu Empresa" required>
+                        <p class="text-red-500 text-sm mt-1 hidden">Campo requerido.</p>
+                    </div>
+                    <div>
+                        <label for="float-email" class="block text-sm font-medium mb-1">Correo <span class="text-red-500">*</span></label>
+                        <input type="email" id="float-email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary" placeholder="Correo Electrónico" required>
+                        <p class="text-red-500 text-sm mt-1 hidden">Email inválido.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label for="float-phone" class="block text-sm font-medium mb-1">Número de Teléfono <span class="text-red-500">*</span></label>
+                        <input type="tel" id="float-phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary" placeholder="Número de Contacto" required>
+                        <p class="text-red-500 text-sm mt-1 hidden">Teléfono inválido.</p>
+                    </div>
+                    <div>
+                        <label for="service-type" class="block text-sm font-medium mb-1">Tipo de Servicio <span class="text-red-500">*</span></label>
+                        <select id="service-type" name="service-type" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary bg-white" required>
+                            <option value="">Seleccione un servicio</option>
+                            <option value="Atención al Cliente">Atención al Cliente</option>
+                            <option value="Asistente Virtual">Asistente Virtual</option>
+                            <option value="Gestión de Sitios Web">Gestión de Sitios Web</option>
+                        </select>
+                        <p class="text-red-500 text-sm mt-1 hidden">Campo requerido.</p>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="float-message" class="block text-sm font-medium mb-1">Mensaje (Opcional)</label>
+                    <textarea id="float-message" name="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary" placeholder="Escribe un Mensaje..." ></textarea>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 items-center">
+                    <div>
+                        <label for="float-captcha" class="block text-sm font-medium mb-1">Verificación Anti-Spam <span class="text-red-500">*</span></label>
+                        <input type="text" id="float-captcha" name="captcha" placeholder="Introduce los números" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary" required>
+                        <p class="text-red-500 text-sm mt-1 hidden">El código es incorrecto.</p>
+                    </div>
+                    <div class="flex items-center justify-center bg-gray-200 rounded-md p-2 mt-2 md:mt-0">
+                        <span id="float-captcha-code" class="text-2xl font-bold tracking-widest text-gray-700 select-none"></span>
+                        <button type="button" id="refresh-float-captcha" class="ml-4 text-secondary hover:text-base transition-colors text-xl">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <button type="submit" class="w-full bg-secondary text-white px-6 py-3 rounded-md text-lg font-bold hover:bg-opacity-90 transition-all duration-300 shadow-lg">
+                    <span>Enviar a WhatsApp</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <header id="header" class="fixed top-0 left-0 right-0 z-30 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="./" class="flex items-center">
+                <img src="https://i.postimg.cc/nzNyNBBd/Makri-logo.png" alt="Logo de Makri" id="header-logo" class="h-10 md:h-12 transition-all duration-300">
+            </a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#about" class="text-white hover:text-secondary transition-colors duration-300 font-medium">Nosotros</a>
+                <div class="relative group">
+                    <button class="text-white hover:text-secondary transition-colors duration-300 font-medium flex items-center">
+                        <span>Servicios</span> <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                    </button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-56 bg-white rounded-md shadow-lg pb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                        <a href="#services" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-secondary">Atención al Cliente</a>
+                        <a href="#services" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-secondary">Asistente Virtual</a>
+                    </div>
+                </div>
+                <a href="#testimonials" class="text-white hover:text-secondary transition-colors duration-300 font-medium">Clientes</a>
+                <a href="empleo.html" class="text-white hover:text-secondary transition-colors duration-300 font-medium">Empleo</a>
+                <div class="relative group">
+                    <button class="text-white hover:text-secondary transition-colors duration-300 font-medium flex items-center">
+                        LAN <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                    </button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-40 bg-white rounded-md shadow-lg pb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                        <a href="./" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-secondary">
+                            <img src="https://flagcdn.com/w20/es.png" alt="Bandera de España" class="mr-2"> Español
+                        </a>
+                        <a href="./en/" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-secondary">
+                            <img src="https://flagcdn.com/w20/gb.png" alt="Bandera de Reino Unido" class="mr-2"> English
+                        </a>
+                    </div>
+                </div>
+                <a href="#contact" class="bg-secondary text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300 font-semibold shadow-lg">Contacto</a>
+            </div>
+            <button id="mobile-menu-button" class="lg:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-60 z-40 hidden"></div>
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-72 bg-base p-8 z-50 transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden overflow-y-auto">
+        <button id="close-menu-button" class="absolute top-5 right-5 text-white hover:text-secondary">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <nav class="mt-16 flex flex-col space-y-2 text-white">
+            <a href="#about" class="block py-3 text-xl hover:text-secondary transition-colors">Nosotros</a>
+            <div>
+                <button class="accordion-toggle w-full flex justify-between items-center py-3 text-xl hover:text-secondary transition-colors">
+                    <span>Servicios</span>
+                    <i class="accordion-arrow fas fa-chevron-down text-sm transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content pl-4">
+                    <a href="#services" class="block py-2 text-lg hover:text-secondary transition-colors">Atención al Cliente</a>
+                    <a href="#services" class="block py-2 text-lg hover:text-secondary transition-colors">Asistente Virtual</a>
+                </div>
+            </div>
+            <a href="#testimonials" class="block py-3 text-xl hover:text-secondary transition-colors">Clientes</a>
+            <a href="empleo.html" class="block py-3 text-xl hover:text-secondary transition-colors">Empleo</a>
+            <div>
+                <button class="accordion-toggle w-full flex justify-between items-center py-3 text-xl hover:text-secondary transition-colors">
+                    <span>LAN</span>
+                    <i class="accordion-arrow fas fa-chevron-down text-sm transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content pl-4">
+                    <a href="./" class="flex items-center py-2 text-lg hover:text-secondary transition-colors">
+                        <img src="https://flagcdn.com/w20/es.png" alt="Bandera de España" class="mr-3"> Español
+                    </a>
+                    <a href="./en/" class="flex items-center py-2 text-lg hover:text-secondary transition-colors">
+                       <img src="https://flagcdn.com/w20/gb.png" alt="Bandera de Reino Unido" class="mr-3"> English
+                   </a>
+               </div>
+           </div>
+           <a href="#contact" class="mt-6 block py-3 px-4 bg-secondary font-semibold rounded-full text-center hover:bg-opacity-90 transition-all">Contacto</a>
+       </nav>
+   </div>
+
+   <section class="hero-bg min-h-screen flex items-center pt-20 pb-10">
+    <div class="container mx-auto px-6 text-center text-white">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">Tu Puente al Talento Profesional de Latinoamérica</h1>
+        <h2 class="text-lg md:text-xl lg:text-2xl max-w-4xl mx-auto mb-8 font-light">Reduzca costos hasta un 30% y mejore la eficiencia contratando profesionales certificados en Atención al Cliente, Soporte Técnico, Desarrollo Web y Diseño Gráfico.</h2>
+        <a href="#contact" class="bg-secondary text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-opacity-90 transition-all duration-300 inline-block shadow-xl transform hover:scale-105">
+            <span>Agenda una Consulta Gratuita</span>
+        </a>
+    </div>
+</section>
+
+<main>
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+           <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-base">Nosotros</h2>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="text-lg mb-8">En Makrisystem, funcionamos como el puente de conexión estratégico entre las empresas de Norteamérica y Europa y el excepcional talento profesional de Latinoamérica. Nos dedicamos a redefinir el outsourcing, permitiendo que compañías medianas y grandes externalicen procesos clave y accedan a personal certificado de alto nivel.</p>
+                <h3 class="text-2xl font-bold text-secondary mb-4">Misión</h3>
+                <p class="text-lg">Conectamos el gran potencial del talento latinoamericano con las empresas que buscan crecer. Ser el socio estratégico que optimiza procesos y amplía equipos.</p>
+                <h3 class="text-2xl font-bold text-secondary mt-8 mb-4">Visión</h3>
+                <p class="text-lg">Ser la corporación de referencia para muchas empresas medianas y grandes que necesitan talento capacitado.</p>
+            </div>
+            <div>
+                <img src="https://i.postimg.cc/rsK6PfBH/nosotros.jpg" alt="Equipo profesional" class="rounded-lg shadow-2xl w-full h-auto">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="py-20">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-base">Servicios Enfocados en Áreas de Alta Demanda</h2>
+            <p class="text-lg mt-4 max-w-2xl mx-auto">Comenzamos con un portafolio de servicios esenciales para potenciar tu operación desde el primer día.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg p-8 shadow-xl border border-gray-200 transition-shadow duration-300 hover:shadow-2xl flex flex-col">
+                <h3 class="text-2xl font-bold text-secondary mb-3">Atención al Cliente</h3>
+                <p class="mb-4">Equipos bilingües y capacitados para ofrecer una experiencia excepcional a tus clientes, mejorando la satisfacción y lealtad.</p>
+
+                <ul class="list-disc list-inside space-y-2 mb-6 pl-4 text-gray-700 text-sm">
+                    <li>Atención al Cliente Inbound</li>
+                    <li>Soporte técnico de Nivel 1 y Nivel 2.</li>
+                    <li>Gestión de pedidos, devoluciones y reembolsos.</li>
+                    <li>Soporte de Ventas Inbound.</li>
+                    <li>Campañas Outbound y generación de leads.</li>
+                </ul>
+
+                <button class="service-quote-btn mt-auto self-center bg-base text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300 font-semibold" data-service="Atención al Cliente"><span>Solicitar Servicio</span></button>
+            </div>
+            <div class="bg-white rounded-lg p-8 shadow-xl border border-gray-200 transition-shadow duration-300 hover:shadow-2xl flex flex-col">
+                <h3 class="text-2xl font-bold text-secondary mb-3">Asistente Virtual</h3>
+                <p class="mb-4">Asistentes Virtuales preparados para el entorno empresarial actual, la eficiencia y la optimización del tiempo.</p>
+
+                <ul class="list-disc list-inside space-y-2 mb-6 pl-4 text-gray-700 text-sm">
+                    <li>Soporte Administrativo y de Gestión</li>
+                    <li>Gestión de Agenda y Calendario</li>
+                    <li>Community Management y Email Marketing</li>
+                    <li>Asistencia para Inmobiliarias y Coaches</li>
+                    <li>Gestión de Sitios Web (Frontend/Backend)</li>
+                </ul>
+
+                <button class="service-quote-btn mt-auto self-center bg-base text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300 font-semibold" data-service="Asistente Virtual"><span>Solicitar Servicio</span></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="process" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-base">Un Proceso Sencillo y Transparente</h2>
+            <p class="text-lg mt-4 max-w-2xl mx-auto">Te acompañamos en cada paso para garantizar una transición exitosa y resultados medibles.</p>
+        </div>
+        <div class="relative">
+            <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-secondary opacity-30" style="transform: translateY(-50%);"></div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center relative">
+                <div class="flex flex-col items-center">
+                    <div class="flex items-center justify-center w-24 h-24 bg-white border-4 border-secondary rounded-full text-secondary text-3xl font-bold z-10 shadow-lg">1</div>
+                    <h3 class="text-xl font-semibold mt-4 mb-2">Análisis y Consulta</h3>
+                    <p>Entendemos tus necesidades y objetivos específicos.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="flex items-center justify-center w-24 h-24 bg-white border-4 border-secondary rounded-full text-secondary text-3xl font-bold z-10 shadow-lg">2</div>
+                    <h3 class="text-xl font-semibold mt-4 mb-2">Diseño de Solución</h3>
+                    <p>Creamos una estrategia de outsourcing personalizada.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="flex items-center justify-center w-24 h-24 bg-white border-4 border-secondary rounded-full text-secondary text-3xl font-bold z-10 shadow-lg">3</div>
+                    <h3 class="text-xl font-semibold mt-4 mb-2">Implementación</h3>
+                    <p>Integración fluida de equipos y procesos.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="flex items-center justify-center w-24 h-24 bg-white border-4 border-secondary rounded-full text-secondary text-3xl font-bold z-10 shadow-lg">4</div>
+                    <h3 class="text-xl font-semibold mt-4 mb-2">Gestión y Optimización</h3>
+                    <p>Monitoreo y ajustes continuos para garantizar el éxito.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="py-20">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-base">Nuestros Clientes Hablan por Nosotros</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                <p class="mb-6 italic">"La transición fue increíblemente fluida. El equipo de Makri no solo redujo nuestros costos operativos en un 30%."</p>
+                <div class="flex items-center">
+                    <img class="w-12 h-12 rounded-full mr-4" src="https://i.pravatar.cc/150?img=1" alt="Cliente">
+                    <div>
+                        <p class="font-bold text-secondary">Sarah Jenkins</p>
+                        <p class="text-sm text-gray-500">CEO, North-Tech Solutions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                <p class="mb-6 italic">"Pudimos escalar nuestro equipo de desarrollo mucho más rápido de lo que habíamos planeado."</p>
+                <div class="flex items-center">
+                    <img class="w-12 h-12 rounded-full mr-4" src="https://i.pravatar.cc/150?img=2" alt="Cliente">
+                    <div>
+                        <p class="font-bold text-secondary">Marcus Weber</p>
+                        <p class="text-sm text-gray-500">Sales Director, Berlin Exports</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                <p class="mb-6 italic">"Calidad de primer nivel a un costo que no podíamos encontrar localmente."</p>
+                <div class="flex items-center">
+                    <img class="w-12 h-12 rounded-full mr-4" src="https://i.pravatar.cc/150?img=3" alt="Cliente">
+                    <div>
+                        <p class="font-bold text-secondary">Emily Carter</p>
+                        <p class="text-sm text-gray-500">CTO, CreativeForward</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="founders" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-base">Conoce a Nuestro Equipo</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto mt-16">
+            <div class="text-center">
+                <img class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg" src="https://i.postimg.cc/4d1YRs2N/Gemini-Generated-Image-c86h7jc86h7jc86h.png" alt="Krisly">
+                <h3 class="text-xl font-semibold text-base mb-1">Krisly Shaney</h3>
+                <p class="text-secondary font-medium">CEO Founder</p>
+            </div>
+            <div class="text-center">
+                <img class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg" src="https://i.postimg.cc/k5C1Ljrn/maybe.jpg" alt="Maybe">
+                <h3 class="text-xl font-semibold text-base mb-1">Maybelin Torres</h3>
+                <p class="text-secondary font-medium">Executive Director and HR</p>
+            </div>
+            <div class="text-center">
+                <img class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg" src="https://i.postimg.cc/nMfVXWPh/edevis.jpg" alt="Edevis">
+                <h3 class="text-xl font-semibold text-base mb-1">Edevis Raga</h3>
+                <p class="text-secondary font-medium">Multimedia Developer</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- ===== FAQ Section ===== -->
+                <section id="faq" class="py-20">
+                    <div class="container mx-auto px-6 max-w-4xl">
+                        <div class="text-center mb-16">
+                            <h2 class="text-3xl md:text-4xl font-bold text-base">¿Tienes Preguntas? Te Respondemos.</h2>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                                <div class="accordion-toggle faq-question p-6 cursor-pointer flex justify-between items-center">
+                                    <h3 class="text-lg font-semibold text-base">¿Qué tipo de empresas se benefician de sus servicios?</h3>
+                                    <i class="accordion-arrow fas fa-chevron-down text-secondary transition-transform duration-300"></i>
+                                </div>
+                                <div class="accordion-content faq-answer p-6 pt-0 text-gray-600">
+                                    <p>Nuestros servicios son ideales para empresas medianas y grandes de Norteamérica y Europa que buscan optimizar costos, escalar operaciones de forma eficiente, y acceder a un pool de talento profesional calificado sin las barreras de la contratación local.</p>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                                <div class="accordion-toggle faq-question p-6 cursor-pointer flex justify-between items-center">
+                                    <h3 class="text-lg font-semibold text-base">¿Cómo garantizan la calidad del talento?</h3>
+                                    <i class="accordion-arrow fas fa-chevron-down text-secondary transition-transform duration-300"></i>
+                                </div>
+                                <div class="accordion-content faq-answer p-6 pt-0 text-gray-600">
+                                    <p>Garantizamos la calidad a través de un riguroso proceso de reclutamiento y certificación. Evaluamos no solo las habilidades técnicas, sino también las habilidades blandas y la compatibilidad con la cultura de tu empresa. Realizamos un monitoreo constante y proporcionamos reportes transparentes para asegurar el cumplimiento de los objetivos.</p>
+                                </div>
+                            </div>
+                             <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                                <div class="accordion-toggle faq-question p-6 cursor-pointer flex justify-between items-center">
+                                    <h3 class="text-lg font-semibold text-base">¿Qué medidas de seguridad de datos implementan?</h3>
+                                    <i class="accordion-arrow fas fa-chevron-down text-secondary transition-transform duration-300"></i>
+                                </div>
+                                <div class="accordion-content faq-answer p-6 pt-0 text-gray-600">
+                                    <p>La seguridad de los datos es nuestra máxima prioridad. Implementamos protocolos de seguridad robustos, incluyendo encriptación de datos, redes seguras (VPN), controles de acceso estrictos y cumplimiento de normativas internacionales como GDPR. Todos nuestros profesionales firman acuerdos de confidencialidad (NDA) para proteger tu información sensible.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+<section id="contact" class="py-20 bg-base text-white">
+    <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-center lg:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold">¿Listo para Conectar con Talento de Clase Mundial?</h2>
+                <p class="text-lg mt-4 mb-8">Agenda una consulta gratuita y descubre cómo podemos ayudarte.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-2xl text-gray-800">
+                <form id="contact-form" novalidate>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-1">Nombre Completo <span class="text-red-500">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Ej: John Doe" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary transition-colors" required>
+                            <p id="name-error" class="text-red-500 text-sm mt-1 hidden">Obligatorio.</p>
+                        </div>
+                        <div>
+                            <label for="company" class="block text-sm font-medium mb-1">Empresa <span class="text-red-500">*</span></label>
+                            <input type="text" id="company" name="company" placeholder="Ej: North-Tech" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary transition-colors" required>
+                            <p id="company-error" class="text-red-500 text-sm mt-1 hidden">Obligatorio.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-1">Email Corporativo <span class="text-red-500">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="john.doe@empresa.com" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary transition-colors" required>
+                            <p id="email-error" class="text-red-500 text-sm mt-1 hidden">Email inválido.</p>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium mb-1">Teléfono <span class="text-red-500">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary transition-colors" required>
+                            <p id="phone-error" class="text-red-500 text-sm mt-1 hidden">Teléfono inválido.</p>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-sm font-medium mb-1">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tus necesidades..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary transition-colors"></textarea>
+                    </div>
+                    <div class="mb-6">
+                        <label for="captcha" class="block text-sm font-medium mb-1">Verificación: <span id="captcha-question"></span> <span class="text-red-500">*</span></label>
+                        <input type="number" id="captcha" name="captcha" placeholder="Resuelve la suma" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary transition-colors" required>
+                        <p id="captcha-error" class="text-red-500 text-sm mt-1 hidden">Incorrecto.</p>
+                    </div>
+                    <button type="submit" class="w-full bg-secondary text-white px-6 py-3 rounded-md text-lg font-bold hover:bg-opacity-90 transition-all duration-300 shadow-lg">
+                        <span>Enviar a WhatsApp</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="bg-gray-800 text-gray-300">
+    <div class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <img src="https://i.postimg.cc/nzNyNBBd/Makri-logo.png" alt="Logo" class="h-10 mb-4 filter brightness-0 invert">
+                <p class="text-sm">Conectamos empresas de Norteamérica y Europa con talento latinoamericano.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white mb-4">Enlaces</h4>
+                <ul class="space-y-2">
+                    <li><a href="./index.html" class="hover:text-secondary">Inicio</a></li>
+                    <li><a href="politicas.html" class="hover:text-secondary">Privacidad</a></li>
+                    <li><a href="terminos.html" class="hover:text-secondary">Términos</a></li>
+                    <li><a href="empleo.html" class="hover:text-secondary">Empleo</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white mb-4">Contacto</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>Cabimas, Estado Zulia. Venezuela</li>
+                    <li>reclutamiento.makri@outlook.com</li>
+                    <li>+58 (0414) 1747995</li>
+                </ul>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-secondary"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-secondary"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-gray-700 pt-8 text-center text-sm">
+            <p>&copy; 2025 Makri Outsourcing. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<div id="whatsappIcon" class="whatsapp-icon">
+    <i class="fab fa-whatsapp"></i>
+    <span id="notificationBadge" class="notification-badge">1</span>
+    <div id="whatsappPush" class="whatsapp-push"><span>¿Tienes dudas?</span></div>
+</div>
+
+<div id="chatContainer" class="chat-container">
+    <div class="chat-header">
+        <div class="chat-header-info">
+            <div class="profile-pic-container">
+                <img src="https://i.postimg.cc/k5C1Ljrn/maybe.jpg" alt="Maybe" class="profile-pic">
+                <span class="online-indicator"></span>
+            </div>
+            <span>Asistente En Linea</span>
+        </div>
+        <button id="closeChatBtn" class="close-btn">&times;</button>
+    </div>
+    <div id="chatMessages" class="chat-messages"></div>
+    <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Escribe...">
+        <button id="sendMessageBtn"><i class="fas fa-paper-plane"></i></button>
+    </div>
+</div>
+
+<section id="cookie-consent-banner" class="fixed bottom-0 left-0 right-0 bg-base text-white p-6 z-50 transform translate-y-full transition-transform duration-500">
+    <div class="container mx-auto flex flex-col items-center gap-4">
+        <p class="text-sm">Usamos cookies para mejorar tu experiencia. <a href="politicas.html" class="text-secondary font-bold">Ver más</a>.</p>
+        <button id="accept-cookies-btn" class="bg-secondary px-6 py-2 rounded-full">Aceptar</button>
+    </div>
+</section>
+
+<script src="js/notifications_floats.js"></script>
+<script src="js/menu_header.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/whatsapp.js"></script>
+<script src="js/noclick.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const WHATSAPP_NUM = "5804141747995";
+
+        // --- LÓGICA DE APERTURA DEL MODAL DE SERVICIOS ---
+        const floatFormContainer = document.getElementById('float-form-container');
+        const floatFormCard = document.getElementById('float-form-card');
+        const closeFloatFormBtn = document.getElementById('close-float-form');
+        const serviceButtons = document.querySelectorAll('.service-quote-btn');
+        const serviceSelect = document.getElementById('service-type');
+        const floatForm = document.getElementById('float-contact-form');
+
+        const openFloatForm = (serviceName = "") => {
+            floatForm.reset();
+            if(serviceName) serviceSelect.value = serviceName;
+            genFloatCaptcha();
+            floatFormContainer.classList.remove('opacity-0', 'pointer-events-none');
+            floatFormCard.classList.remove('scale-95');
+            document.body.classList.add('overflow-hidden');
+        };
+
+        const closeFloatForm = () => {
+            floatFormContainer.classList.add('opacity-0', 'pointer-events-none');
+            floatFormCard.classList.add('scale-95');
+            document.body.classList.remove('overflow-hidden');
+        };
+
+        serviceButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const service = btn.getAttribute('data-service');
+                openFloatForm(service);
+            });
+        });
+
+        if(closeFloatFormBtn) closeFloatFormBtn.addEventListener('click', closeFloatForm);
+        floatFormContainer.addEventListener('click', (e) => {
+            if (e.target === floatFormContainer) closeFloatForm();
+        });
+
+        // --- LÓGICA CAPTCHA SUMA (CONTACTO) ---
+        const captchaQuestion = document.getElementById('captcha-question');
+        let captchaResult = 0;
+
+        function generateCaptcha() {
+            const n1 = Math.floor(Math.random() * 10);
+            const n2 = Math.floor(Math.random() * 10);
+            captchaResult = n1 + n2;
+            if(captchaQuestion) captchaQuestion.textContent = `${n1} + ${n2}`;
+        }
+        generateCaptcha();
+
+        const contactForm = document.getElementById('contact-form');
+        if(contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const userCaptcha = parseInt(document.getElementById('captcha').value);
+                if(userCaptcha !== captchaResult) {
+                    document.getElementById('captcha-error').classList.remove('hidden');
+                    return;
+                }
+                document.getElementById('captcha-error').classList.add('hidden');
+                
+                const text = `*Nueva Consulta Makrisystem*\n\n` +
+                             `*Nombre:* ${document.getElementById('name').value}\n` +
+                             `*Empresa:* ${document.getElementById('company').value}\n` +
+                             `*Email:* ${document.getElementById('email').value}\n` +
+                             `*Teléfono:* ${document.getElementById('phone').value}\n` +
+                             `*Mensaje:* ${document.getElementById('message').value}`;
+                
+                showToast('success');
+                setTimeout(() => {
+                    window.open(`https://wa.me/${WHATSAPP_NUM}?text=${encodeURIComponent(text)}`, '_blank');
+                }, 1000);
+            });
+        }
+
+        // --- LÓGICA CAPTCHA FLOAT (SERVICIOS) ---
+        let floatCaptchaCode = "";
+        const floatCaptchaSpan = document.getElementById('float-captcha-code');
+
+        function genFloatCaptcha() {
+            floatCaptchaCode = Math.floor(10000 + Math.random() * 90000).toString();
+            if(floatCaptchaSpan) floatCaptchaSpan.textContent = floatCaptchaCode;
+        }
+        genFloatCaptcha();
+        document.getElementById('refresh-float-captcha').addEventListener('click', genFloatCaptcha);
+
+        if(floatForm) {
+            floatForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const fcap = document.getElementById('float-captcha').value;
+                if(fcap !== floatCaptchaCode) {
+                    alert("Código captcha incorrecto");
+                    return;
+                }
+
+                const text = `*Solicitud de Servicio Makrisystem*\n\n` +
+                             `*Cliente:* ${document.getElementById('first-name').value} ${document.getElementById('last-name').value}\n` +
+                             `*Empresa:* ${document.getElementById('float-company').value}\n` +
+                             `*Servicio:* ${serviceSelect.value}\n` +
+                             `*Mensaje:* ${document.getElementById('float-message').value}`;
+
+                showToast('success');
+                setTimeout(() => {
+                    closeFloatForm();
+                    window.open(`https://wa.me/${WHATSAPP_NUM}?text=${encodeURIComponent(text)}`, '_blank');
+                }, 1000);
+            });
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const banner = document.getElementById('cookie-consent-banner');
+        const acceptBtn = document.getElementById('accept-cookies-btn');
+
+        const setCookie = (name, value, days) => {
+            let expires = "";
+            if (days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "")  + expires + "; path=/; SameSite=Lax";
+        };
+
+        const getCookie = (name) => {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        };
+
+        if (acceptBtn) {
+            acceptBtn.addEventListener('click', () => {
+                setCookie('cookies_accepted', 'true', 365);
+                banner.classList.add('translate-y-full');
+            });
+        }
+
+        if (!getCookie('cookies_accepted')) {
+            setTimeout(() => {
+               if(banner) banner.classList.remove('translate-y-full');
+            }, 1500);
+        }
+    });
+</script>
+
+<!-- RICH SNIPED PARA GOOGLE -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Makrisystem",
+  "url": "https://makrisystem.com",
+  "logo": "https://i.postimg.cc/nzNyNBBd/Makri-logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+58-414-1747995",
+    "contactType": "customer service",
+    "email": "reclutamiento.makri@outlook.com",
+    "availableLanguage": ["Spanish", "English"]
+  },
+  "sameAs": [
+    "https://www.facebook.com/makri",
+    "https://www.instagram.com/makri"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://makrisystem.com",
+  "name": "Makrisystem",
+  "description": "Tu Puente al Talento Profesional de Latinoamérica",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://makrisystem.com/index.html?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<!-- RICH SNIPED SERVICES GOOGLE -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Outsourcing Empresarial",
+  "provider": {
+    "@type": "Organization",
+    "name": "MakriSystem"
+  },
+  "areaServed": ["North America", "Europe", "Latin America"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de Outsourcing",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Atención al Cliente Inbound y Outbound"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Asistente Virtual y Soporte Administrativo"
+        }
+      }
+    ]
+  }
+}
+</script>
+
+<!-- RICH SNIPED FAQ GOOGLE -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "¿Qué tipo de empresas se benefician de sus servicios?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nuestros servicios son ideales para empresas medianas y grandes de Norteamérica y Europa que buscan optimizar costos y acceder a talento profesional calificado de Latinoamérica."
+    }
+  }, {
+    "@type": "Question",
+    "name": "¿Cómo garantizan la calidad del talento?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Garantizamos la calidad a través de un riguroso proceso de reclutamiento y certificación, evaluando habilidades técnicas y blandas mediante monitoreo constante."
+    }
+  }, {
+    "@type": "Question",
+    "name": "¿Qué medidas de seguridad de datos implementan?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Implementamos protocolos robustos como encriptación, redes seguras (VPN), controles de acceso estrictos y cumplimiento de normativas internacionales como GDPR."
+    }
+  }]
+}
+</script>
+    
+</body>
+
+</html>
+

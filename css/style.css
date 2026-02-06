@@ -1,0 +1,46 @@
+ 
+
+                body { font-family: 'Montserrat', sans-serif; background-color: #ffffff; }
+                .bg-base { background-color: #000062; }
+                .bg-secondary { background-color: #88764e; }
+                .text-base { color: #000062; }
+                .text-secondary { color: #88764e; }
+                .border-secondary { border-color: #88764e; }
+                .hero-bg { background-image: linear-gradient(rgba(0, 0, 98, 0.8), rgba(0, 0, 98, 0.8)), url('https://i.postimg.cc/KjSKgbJS/background.png'); background-size: cover; background-position: center; }
+                html { scroll-behavior: smooth; }
+                .scrolled { background-color: #000062; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); }
+                .accordion-toggle.active .accordion-arrow { transform: rotate(180deg); }
+                .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-in-out; }
+                .whatsapp-icon { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; font-size: 32px; cursor: pointer; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); z-index: 1000; }
+                .notification-badge { position: absolute; top: -5px; right: -5px; background-color: red; color: white; border-radius: 50%; width: 24px; height: 24px; font-size: 14px; font-weight: bold; display: flex; justify-content: center; align-items: center; border: 2px solid white; opacity: 0; transform: scale(0.5); transition: opacity 0.3s ease, transform 0.3s ease; pointer-events: none; }
+                .notification-badge.show { opacity: 1; transform: scale(1); }
+                .whatsapp-push { position: absolute; bottom: 12px; right: 75px; background-color: white; color: #333; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); white-space: nowrap; font-size: 15px; font-weight: 500; opacity: 0; transform: translateX(10px); transition: opacity 0.3s ease, transform 0.3s ease; pointer-events: none; }
+                .whatsapp-push::after { content: ''; position: absolute; top: 50%; left: 100%; margin-top: -7px; border-width: 7px; border-style: solid; border-color: transparent transparent transparent white; }
+                .whatsapp-push.show { opacity: 1; transform: translateX(0); }
+                .chat-container { position: fixed; bottom: 90px; right: 20px; width: 350px; max-width: 90%; background-color: #f7f7f7; border-radius: 1rem; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); display: flex; flex-direction: column; overflow: hidden; z-index: 999; transform: translateY(20px); opacity: 0; visibility: hidden; transition: transform 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out; }
+                .chat-container.active { transform: translateY(0); opacity: 1; visibility: visible; }
+                .chat-header { background-color: #128C7E; color: white; padding: 0.75rem 1rem; border-top-left-radius: 1rem; border-top-right-radius: 1rem; display: flex; align-items: center; justify-content: space-between; font-weight: 600; }
+                .chat-header-info { display: flex; align-items: center; }
+                .profile-pic-container { position: relative; width: 40px; height: 40px; border-radius: 50%; background-color: #fff; overflow: hidden; margin-right: 10px; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2); }
+                .profile-pic { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+                .online-indicator { position: absolute; bottom: 0px; right: 0px; width: 10px; height: 10px; background-color: #25D366; border-radius: 50%; border: 2px solid #128C7E; }
+                .chat-header .close-btn { background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
+                .chat-messages { flex-grow: 1; padding: 1rem; overflow-y: auto; background-color: #E5DDD5; min-height: 150px; max-height: 400px; display: flex; flex-direction: column; justify-content: flex-end; }
+                .message-bubble { border-radius: 0.75rem; padding: 0.6rem 0.8rem; margin-bottom: 0.5rem; max-width: 80%; word-wrap: break-word; position: relative; padding-bottom: 1.5rem; }
+                .message-bubble.received-default { background-color: #FFFFFF; align-self: flex-start; }
+                .message-bubble.received-bot-welcome { background-color: #ECEFF1; color: #333; align-self: flex-start; }
+                .message-bubble.sent { background-color: #DCF8C6; align-self: flex-end; }
+                .message-info { position: absolute; bottom: 0.3rem; right: 0.5rem; font-size: 0.7rem; color: #667781; display: flex; align-items: center; }
+                .message-bubble.received-bot-welcome .message-info { color: #667781; }
+                .message-info .fa-check-double { margin-left: 5px; color: #4FC3F7; }
+                .message-info .fa-check.single-check { margin-left: 5px; color: inherit; }
+                .typing-indicator { display: flex; align-items: center; margin-bottom: 0.5rem; align-self: flex-start; background-color: #FFFFFF; border-radius: 0.75rem; padding: 0.6rem 0.8rem; }
+                .typing-indicator span { display: inline-block; width: 8px; height: 8px; background-color: #888; border-radius: 50%; margin: 0 2px; animation: bounce 1.4s infinite ease-in-out both; }
+                .typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
+                .typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
+                .typing-indicator span:nth-child(3) { animation-delay: 0s; }
+                @keyframes bounce { 0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1); } }
+                .chat-input { display: flex; padding: 0.75rem 1rem; background-color: #F0F0F0; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem; }
+                .chat-input input { flex-grow: 1; border: none; border-radius: 1.25rem; padding: 0.75rem 1rem; margin-right: 0.5rem; background-color: white; font-size: 1rem; outline: none; }
+                .chat-input button { background-color: #128C7E; color: white; border: none; border-radius: 50%; width: 45px; height: 45px; display: flex; justify-content: center; align-items: center; font-size: 1.2rem; cursor: pointer; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); transition: background-color 0.2s; }
+                .chat-input button:hover { background-color: #075E54; }

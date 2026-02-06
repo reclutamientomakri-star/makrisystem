@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="canonical" href="https://makrisystem.com/en/index.html">
+    <link rel="alternate" hreflang="es" href="https://makrisystem.com/index.html">
+    <link rel="alternate" hreflang="en" href="https://makrisystem.com/en/index.html">
+    <link rel="alternate" hreflang="x-default" href="https://makrisystem.com/index.html">
+
+    <link rel="shortcut icon" href="https://i.postimg.cc/d32v1kW9/ico.jpg" type="image/x-icon">
+    
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">  
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Makrisystem | Corporate Outsourcing Services</title>
+    <meta name="description" content="Discover Makrisystem's corporate outsourcing services. Take your company to the next level with tailored outsourcing solutions.">
+    <meta name="keywords" content="Latin American talent outsourcing, outsourcing services, remote customer service, remote virtual assistant, hire Latin American talent, nearshore outsourcing, qualified outsourcing, bilingual remote talent, nearshore contact center">
+
+    <meta property="og:url" content="https://makrisystem.com/en/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Makrisystem | Corporate Outsourcing Services">
+    <meta property="og:description" content="Discover Makrisystem's corporate outsourcing services. Take your company to the next level with tailored outsourcing solutions.">
+    <meta property="og:image" content="https://i.postimg.cc/Fsq6ksSH/ogg.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="makrisystem.com">
+    <meta property="twitter:url" content="https://makrisystem.com/en/">
+    <meta name="twitter:title" content="Makrisystem | Corporate Outsourcing Services">
+    <meta name="twitter:description" content="Discover Makrisystem's corporate outsourcing services. Take your company to the next level with tailored outsourcing solutions.">
+    <meta name="twitter:image" content="https://i.postimg.cc/Fsq6ksSH/ogg.jpg">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LNH1NXPVTJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LNH1NXPVTJ');
+  </script>
+</head>
+
+<body class="text-gray-700">
+
+    <div id="form-success" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-green-600 text-white text-center p-8 rounded-xl shadow-2xl z-[60] transition-opacity duration-300 opacity-0 pointer-events-none">
+        <h3 class="text-2xl font-bold mb-2">Sent!</h3>
+        <p>Redirecting to WhatsApp to complete your request...</p>
+    </div>
+    <div id="form-error" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-600 text-white text-center p-8 rounded-xl shadow-2xl z-[60] transition-opacity duration-300 opacity-0 pointer-events-none">
+        <h3 class="text-2xl font-bold mb-2">Error!</h3>
+        <p id="error-message-text">There was a problem. Please try again.</p>
+    </div>
+
+    <div id="float-form-container" class="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center p-4 transition-opacity duration-300 opacity-0 pointer-events-none">
+        <div id="float-form-card" class="bg-white p-8 rounded-lg shadow-2xl text-gray-800 w-full max-w-2xl relative transform scale-95 transition-transform duration-300 max-h-[90vh] overflow-y-auto">
+            <button id="close-float-form" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800 text-3xl z-10">&times;</button>
+            <h2 class="text-2xl font-bold text-base mb-6">Request Service</h2>
+            <form id="float-contact-form" novalidate>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label for="first-name" class="block text-sm font-medium mb-1">First Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="first-name" name="first-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary" placeholder="First Name" required>
+                        <p class="text-red-500 text-sm mt-1 hidden">Required field.</p>
+                    </div>
+                    <div>
+                        <label for="last-name" class="block text-sm font-medium mb-1">Last Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="last-name" name="last-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary" placeholder="Last Name" required>
+                        <p class="text-red-500 text-sm mt-1 hidden">Required field.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label for="float-company" class="block text-sm font-medium mb-1">Company <span class="text-red-500">*</span></label>
+                        <input type="text" id="float-company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary" placeholder="Your Company Name" required>
+                        <p class="text-red-500 text-sm mt-1 hidden">Required field.</p>
+                    </div>
+                    <div>
+                        <label for="float-email" class="block text-sm font-medium mb-1">Email <span class="text-red-500">*</span></label>
+                        <input type="email" id="float-email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary" placeholder="Email Address" required>
+                        <p class="text-red-500 text-sm mt-1 hidden">Invalid email.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label for="float-phone" class="block text-sm font-medium mb-1">Phone Number <span class="text-red-500">*</span></label>
+                        <input type="tel" id="float-phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary" placeholder="Contact Number" required>
+                        <p class="text-red-500 text-sm mt-1 hidden">Invalid phone.</p>
+                    </div>
+                    <div>
+                        <label for="service-type" class="block text-sm font-medium mb-1">Service Type <span class="text-red-500">*</span></label>
+                        <select id="service-type" name="service-type" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary bg-white" required>
+                            <option value="">Select a service</option>
+                            <option value="Customer Service">Customer Service</option>
+                            <option value="Virtual Assistant">Virtual Assistant</option>
+                            <option value="Website Management">Website Management</option>
+                        </select>
+                        <p class="text-red-500 text-sm mt-1 hidden">Required field.</p>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="float-message" class="block text-sm font-medium mb-1">Message (Optional)</label>
+                    <textarea id="float-message" name="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary" placeholder="Write a Message..." ></textarea>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 items-center">
+                    <div>
+                        <label for="float-captcha" class="block text-sm font-medium mb-1">Anti-Spam Verification <span class="text-red-500">*</span></label>
+                        <input type="text" id="float-captcha" name="captcha" placeholder="Enter the numbers" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary" required>
+                        <p class="text-red-500 text-sm mt-1 hidden">The code is incorrect.</p>
+                    </div>
+                    <div class="flex items-center justify-center bg-gray-200 rounded-md p-2 mt-2 md:mt-0">
+                        <span id="float-captcha-code" class="text-2xl font-bold tracking-widest text-gray-700 select-none"></span>
+                        <button type="button" id="refresh-float-captcha" class="ml-4 text-secondary hover:text-base transition-colors text-xl">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <button type="submit" class="w-full bg-secondary text-white px-6 py-3 rounded-md text-lg font-bold hover:bg-opacity-90 transition-all duration-300 shadow-lg">
+                    <span>Send to WhatsApp</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <header id="header" class="fixed top-0 left-0 right-0 z-30 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="./" class="flex items-center">
+                <img src="https://i.postimg.cc/nzNyNBBd/Makri-logo.png" alt="Makri Logo" id="header-logo" class="h-10 md:h-12 transition-all duration-300">
+            </a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#about" class="text-white hover:text-secondary transition-colors duration-300 font-medium">About Us</a>
+                <div class="relative group">
+                    <button class="text-white hover:text-secondary transition-colors duration-300 font-medium flex items-center">
+                        <span>Services</span> <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                    </button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-56 bg-white rounded-md shadow-lg pb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                        <a href="#services" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-secondary">Customer Service</a>
+                        <a href="#services" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-secondary">Virtual Assistant</a>
+                    </div>
+                </div>
+                <a href="#testimonials" class="text-white hover:text-secondary transition-colors duration-300 font-medium">Clients</a>
+                <a href="jobs.html" class="text-white hover:text-secondary transition-colors duration-300 font-medium">jobs</a>
+                <div class="relative group">
+                    <button class="text-white hover:text-secondary transition-colors duration-300 font-medium flex items-center">
+                        LAN <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                    </button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-40 bg-white rounded-md shadow-lg pb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                        <a href="../" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-secondary">
+                            <img src="https://flagcdn.com/w20/es.png" alt="Spanish Flag" class="mr-2"> Español
+                        </a>
+                        <a href="./" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-secondary">
+                            <img src="https://flagcdn.com/w20/gb.png" alt="UK Flag" class="mr-2"> English
+                        </a>
+                    </div>
+                </div>
+                <a href="#contact" class="bg-secondary text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300 font-semibold shadow-lg">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="lg:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-60 z-40 hidden"></div>
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-72 bg-base p-8 z-50 transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden overflow-y-auto">
+        <button id="close-menu-button" class="absolute top-5 right-5 text-white hover:text-secondary">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <nav class="mt-16 flex flex-col space-y-2 text-white">
+            <a href="#about" class="block py-3 text-xl hover:text-secondary transition-colors">About Us</a>
+            <div>
+                <button class="accordion-toggle w-full flex justify-between items-center py-3 text-xl hover:text-secondary transition-colors">
+                    <span>Services</span>
+                    <i class="accordion-arrow fas fa-chevron-down text-sm transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content pl-4">
+                    <a href="#services" class="block py-2 text-lg hover:text-secondary transition-colors">Customer Service</a>
+                    <a href="#services" class="block py-2 text-lg hover:text-secondary transition-colors">Virtual Assistant</a>
+                </div>
+            </div>
+            <a href="#testimonials" class="block py-3 text-xl hover:text-secondary transition-colors">Clients</a>
+            <a href="jobs.html" class="block py-3 text-xl hover:text-secondary transition-colors">jobs</a>
+            <div>
+                <button class="accordion-toggle w-full flex justify-between items-center py-3 text-xl hover:text-secondary transition-colors">
+                    <span>LAN</span>
+                    <i class="accordion-arrow fas fa-chevron-down text-sm transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content pl-4">
+                    <a href="../" class="flex items-center py-2 text-lg hover:text-secondary transition-colors">
+                        <img src="https://flagcdn.com/w20/es.png" alt="Spanish Flag" class="mr-3"> Español
+                    </a>
+                    <a href="./" class="flex items-center py-2 text-lg hover:text-secondary transition-colors">
+                       <img src="https://flagcdn.com/w20/gb.png" alt="UK Flag" class="mr-3"> English
+                   </a>
+               </div>
+           </div>
+           <a href="#contact" class="mt-6 block py-3 px-4 bg-secondary font-semibold rounded-full text-center hover:bg-opacity-90 transition-all">Contact</a>
+       </nav>
+   </div>
+
+   <section class="hero-bg min-h-screen flex items-center pt-20 pb-10">
+    <div class="container mx-auto px-6 text-center text-white">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">Your Bridge to Latin American Professional Talent</h1>
+        <h2 class="text-lg md:text-xl lg:text-2xl max-w-4xl mx-auto mb-8 font-light">Reduce costs by up to 30% and improve efficiency by hiring certified professionals in Customer Service, Technical Support, Web Development, and Graphic Design.</h2>
+        <a href="#contact" class="bg-secondary text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-opacity-90 transition-all duration-300 inline-block shadow-xl transform hover:scale-105">
+            <span>Schedule a Free Consultation</span>
+        </a>
+    </div>
+</section>
+
+<main>
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+           <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-base">About Us</h2>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="text-lg mb-8">At Makrisystem, we function as the strategic connection bridge between companies in North America and Europe and the exceptional professional talent of Latin America. We are dedicated to redefining outsourcing, enabling medium and large companies to outsource key processes and access certified, high-level personnel.</p>
+                <h3 class="text-2xl font-bold text-secondary mb-4">Mission</h3>
+                <p class="text-lg">We connect the great potential of Latin American talent with companies seeking growth. To be the strategic partner that optimizes processes and expands teams.</p>
+                <h3 class="text-2xl font-bold text-secondary mt-8 mb-4">Vision</h3>
+                <p class="text-lg">To be the reference corporation for many medium and large companies that need trained talent.</p>
+            </div>
+            <div>
+                <img src="https://i.postimg.cc/rsK6PfBH/nosotros.jpg" alt="Professional team" class="rounded-lg shadow-2xl w-full h-auto">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="py-20">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-base">Services Focused on High-Demand Areas</h2>
+            <p class="text-lg mt-4 max-w-2xl mx-auto">We start with a portfolio of essential services to empower your operation from day one.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg p-8 shadow-xl border border-gray-200 transition-shadow duration-300 hover:shadow-2xl flex flex-col">
+                <h3 class="text-2xl font-bold text-secondary mb-3">Customer Service</h3>
+                <p class="mb-4">Bilingual and trained teams to provide an exceptional experience to your customers, improving satisfaction and loyalty.</p>
+
+                <ul class="list-disc list-inside space-y-2 mb-6 pl-4 text-gray-700 text-sm">
+                    <li>Inbound Customer Service</li>
+                    <li>Level 1 and Level 2 technical support.</li>
+                    <li>Order management, returns, and refunds.</li>
+                    <li>Inbound Sales Support.</li>
+                    <li>Outbound campaigns and lead generation.</li>
+                </ul>
+
+                <button class="service-quote-btn mt-auto self-center bg-base text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300 font-semibold" data-service="Customer Service"><span>Request Service</span></button>
+            </div>
+            <div class="bg-white rounded-lg p-8 shadow-xl border border-gray-200 transition-shadow duration-300 hover:shadow-2xl flex flex-col">
+                <h3 class="text-2xl font-bold text-secondary mb-3">Virtual Assistant</h3>
+                <p class="mb-4">Virtual Assistants prepared for today's business environment, efficiency, and time optimization.</p>
+
+                <ul class="list-disc list-inside space-y-2 mb-6 pl-4 text-gray-700 text-sm">
+                    <li>Administrative and Management Support</li>
+                    <li>Agenda and Calendar Management</li>
+                    <li>Community Management and Email Marketing</li>
+                    <li>Assistance for Real Estate and Coaches</li>
+                    <li>Website Management (Frontend/Backend)</li>
+                </ul>
+
+                <button class="service-quote-btn mt-auto self-center bg-base text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300 font-semibold" data-service="Virtual Assistant"><span>Request Service</span></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="process" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-base">A Simple and Transparent Process</h2>
+            <p class="text-lg mt-4 max-w-2xl mx-auto">We accompany you every step to ensure a successful transition and measurable results.</p>
+        </div>
+        <div class="relative">
+            <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-secondary opacity-30" style="transform: translateY(-50%);"></div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center relative">
+                <div class="flex flex-col items-center">
+                    <div class="flex items-center justify-center w-24 h-24 bg-white border-4 border-secondary rounded-full text-secondary text-3xl font-bold z-10 shadow-lg">1</div>
+                    <h3 class="text-xl font-semibold mt-4 mb-2">Analysis and Consultation</h3>
+                    <p>We understand your specific needs and objectives.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="flex items-center justify-center w-24 h-24 bg-white border-4 border-secondary rounded-full text-secondary text-3xl font-bold z-10 shadow-lg">2</div>
+                    <h3 class="text-xl font-semibold mt-4 mb-2">Solution Design</h3>
+                    <p>We create a personalized outsourcing strategy.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="flex items-center justify-center w-24 h-24 bg-white border-4 border-secondary rounded-full text-secondary text-3xl font-bold z-10 shadow-lg">3</div>
+                    <h3 class="text-xl font-semibold mt-4 mb-2">Implementation</h3>
+                    <p>Seamless integration of teams and processes.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="flex items-center justify-center w-24 h-24 bg-white border-4 border-secondary rounded-full text-secondary text-3xl font-bold z-10 shadow-lg">4</div>
+                    <h3 class="text-xl font-semibold mt-4 mb-2">Management and Optimization</h3>
+                    <p>Continuous monitoring and adjustments to ensure success.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="py-20">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-base">Our Clients Speak for Us</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                <p class="mb-6 italic">"The transition was incredibly smooth. The Makri team not only reduced our operational costs by 30%."</p>
+                <div class="flex items-center">
+                    <img class="w-12 h-12 rounded-full mr-4" src="https://i.pravatar.cc/150?img=1" alt="Client">
+                    <div>
+                        <p class="font-bold text-secondary">Sarah Jenkins</p>
+                        <p class="text-sm text-gray-500">CEO, North-Tech Solutions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                <p class="mb-6 italic">"We were able to scale our development team much faster than we had planned."</p>
+                <div class="flex items-center">
+                    <img class="w-12 h-12 rounded-full mr-4" src="https://i.pravatar.cc/150?img=2" alt="Client">
+                    <div>
+                        <p class="font-bold text-secondary">Marcus Weber</p>
+                        <p class="text-sm text-gray-500">Sales Director, Berlin Exports</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                <p class="mb-6 italic">"Top-tier quality at a cost we couldn't find locally."</p>
+                <div class="flex items-center">
+                    <img class="w-12 h-12 rounded-full mr-4" src="https://i.pravatar.cc/150?img=3" alt="Client">
+                    <div>
+                        <p class="font-bold text-secondary">Emily Carter</p>
+                        <p class="text-sm text-gray-500">CTO, CreativeForward</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="founders" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-base">Meet Our Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto mt-16">
+            <div class="text-center">
+                <img class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg" src="https://i.postimg.cc/4d1YRs2N/Gemini-Generated-Image-c86h7jc86h7jc86h.png" alt="Krisly">
+                <h3 class="text-xl font-semibold text-base mb-1">Krisly Shaney</h3>
+                <p class="text-secondary font-medium">CEO Founder</p>
+            </div>
+            <div class="text-center">
+                <img class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg" src="https://i.postimg.cc/k5C1Ljrn/maybe.jpg" alt="Maybe">
+                <h3 class="text-xl font-semibold text-base mb-1">Maybelin Torres</h3>
+                <p class="text-secondary font-medium">Executive Director and HR</p>
+            </div>
+            <div class="text-center">
+                <img class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg" src="https://i.postimg.cc/nMfVXWPh/edevis.jpg" alt="Edevis">
+                <h3 class="text-xl font-semibold text-base mb-1">Edevis Raga</h3>
+                <p class="text-secondary font-medium">Multimedia Developer</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- ===== FAQ Section ===== -->
+                <section id="faq" class="py-20">
+                    <div class="container mx-auto px-6 max-w-4xl">
+                        <div class="text-center mb-16">
+                            <h2 class="text-3xl md:text-4xl font-bold text-base">Have Questions? We Answer.</h2>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                                <div class="accordion-toggle faq-question p-6 cursor-pointer flex justify-between items-center">
+                                    <h3 class="text-lg font-semibold text-base">What type of companies benefit from your services?</h3>
+                                    <i class="accordion-arrow fas fa-chevron-down text-secondary transition-transform duration-300"></i>
+                                </div>
+                                <div class="accordion-content faq-answer p-6 pt-0 text-gray-600">
+                                    <p>Our services are ideal for medium and large companies in North America and Europe looking to optimize costs, scale operations efficiently, and access a pool of qualified professional talent without local hiring barriers.</p>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                                <div class="accordion-toggle faq-question p-6 cursor-pointer flex justify-between items-center">
+                                    <h3 class="text-lg font-semibold text-base">How do you guarantee the quality of talent?</h3>
+                                    <i class="accordion-arrow fas fa-chevron-down text-secondary transition-transform duration-300"></i>
+                                </div>
+                                <div class="accordion-content faq-answer p-6 pt-0 text-gray-600">
+                                    <p>We guarantee quality through a rigorous recruitment and certification process. We evaluate not only technical skills but also soft skills and compatibility with your company culture. We conduct constant monitoring and provide transparent reports to ensure goal achievement.</p>
+                                </div>
+                            </div>
+                             <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                                <div class="accordion-toggle faq-question p-6 cursor-pointer flex justify-between items-center">
+                                    <h3 class="text-lg font-semibold text-base">What data security measures do you implement?</h3>
+                                    <i class="accordion-arrow fas fa-chevron-down text-secondary transition-transform duration-300"></i>
+                                </div>
+                                <div class="accordion-content faq-answer p-6 pt-0 text-gray-600">
+                                    <p>Data security is our top priority. We implement robust security protocols, including data encryption, secure networks (VPN), strict access controls, and compliance with international regulations like GDPR. All our professionals sign confidentiality agreements (NDA) to protect your sensitive information.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+<section id="contact" class="py-20 bg-base text-white">
+    <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-center lg:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold">Ready to Connect with World-Class Talent?</h2>
+                <p class="text-lg mt-4 mb-8">Schedule a free consultation and discover how we can help you.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-2xl text-gray-800">
+                <form id="contact-form" novalidate>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-1">Full Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Ex: John Doe" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary transition-colors" required>
+                            <p id="name-error" class="text-red-500 text-sm mt-1 hidden">Required.</p>
+                        </div>
+                        <div>
+                            <label for="company" class="block text-sm font-medium mb-1">Company <span class="text-red-500">*</span></label>
+                            <input type="text" id="company" name="company" placeholder="Ex: North-Tech" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary transition-colors" required>
+                            <p id="company-error" class="text-red-500 text-sm mt-1 hidden">Required.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-1">Corporate Email <span class="text-red-500">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="john.doe@company.com" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary transition-colors" required>
+                            <p id="email-error" class="text-red-500 text-sm mt-1 hidden">Invalid email.</p>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium mb-1">Phone <span class="text-red-500">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary transition-colors" required>
+                            <p id="phone-error" class="text-red-500 text-sm mt-1 hidden">Invalid phone.</p>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-sm font-medium mb-1">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Your needs..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary transition-colors"></textarea>
+                    </div>
+                    <div class="mb-6">
+                        <label for="captcha" class="block text-sm font-medium mb-1">Verification: <span id="captcha-question"></span> <span class="text-red-500">*</span></label>
+                        <input type="number" id="captcha" name="captcha" placeholder="Solve the addition" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-secondary focus:border-secondary transition-colors" required>
+                        <p id="captcha-error" class="text-red-500 text-sm mt-1 hidden">Incorrect.</p>
+                    </div>
+                    <button type="submit" class="w-full bg-secondary text-white px-6 py-3 rounded-md text-lg font-bold hover:bg-opacity-90 transition-all duration-300 shadow-lg">
+                        <span>Send to WhatsApp</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="bg-gray-800 text-gray-300">
+    <div class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <img src="https://i.postimg.cc/nzNyNBBd/Makri-logo.png" alt="Logo" class="h-10 mb-4 filter brightness-0 invert">
+                <p class="text-sm">We connect companies from North America and Europe with Latin American talent.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white mb-4">Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="./index.html" class="hover:text-secondary">Home</a></li>
+                    <li><a href="privacy.html" class="hover:text-secondary">Privacy</a></li>
+                    <li><a href="terms.html" class="hover:text-secondary">Terms</a></li>
+                    <li><a href="jobs.html" class="hover:text-secondary">Jobs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white mb-4">Contact</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>Cabimas, Zulia State. Venezuela</li>
+                    <li>reclutamiento.makri@outlook.com</li>
+                    <li>+58 (0414) 1747995</li>
+                </ul>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-secondary"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-secondary"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-gray-700 pt-8 text-center text-sm">
+            <p>&copy; 2025 Makri Outsourcing. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<div id="whatsappIcon" class="whatsapp-icon">
+    <i class="fab fa-whatsapp"></i>
+    <span id="notificationBadge" class="notification-badge">1</span>
+    <div id="whatsappPush" class="whatsapp-push"><span>Do you have questions?</span></div>
+</div>
+
+<div id="chatContainer" class="chat-container">
+    <div class="chat-header">
+        <div class="chat-header-info">
+            <div class="profile-pic-container">
+                <img src="https://i.postimg.cc/k5C1Ljrn/maybe.jpg" alt="Maybe" class="profile-pic">
+                <span class="online-indicator"></span>
+            </div>
+            <span>Online Assistant</span>
+        </div>
+        <button id="closeChatBtn" class="close-btn">&times;</button>
+    </div>
+    <div id="chatMessages" class="chat-messages"></div>
+    <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Write...">
+        <button id="sendMessageBtn"><i class="fas fa-paper-plane"></i></button>
+    </div>
+</div>
+
+<section id="cookie-consent-banner" class="fixed bottom-0 left-0 right-0 bg-base text-white p-6 z-50 transform translate-y-full transition-transform duration-500">
+    <div class="container mx-auto flex flex-col items-center gap-4">
+        <p class="text-sm">We use cookies to improve your experience. <a href="politicas.html" class="text-secondary font-bold">See more</a>.</p>
+        <button id="accept-cookies-btn" class="bg-secondary px-6 py-2 rounded-full">Accept</button>
+    </div>
+</section>
+
+<script src="js/notifications_floats.js"></script>
+<script src="js/menu_header.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/whatsapp.js"></script>
+<script src="js/noclick.js"></script>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const WHATSAPP_NUM = "5804141747995";
+
+        // --- SERVICE MODAL OPENING LOGIC ---
+        const floatFormContainer = document.getElementById('float-form-container');
+        const floatFormCard = document.getElementById('float-form-card');
+        const closeFloatFormBtn = document.getElementById('close-float-form');
+        const serviceButtons = document.querySelectorAll('.service-quote-btn');
+        const serviceSelect = document.getElementById('service-type');
+        const floatForm = document.getElementById('float-contact-form');
+
+        const openFloatForm = (serviceName = "") => {
+            floatForm.reset();
+            if(serviceName) serviceSelect.value = serviceName;
+            genFloatCaptcha();
+            floatFormContainer.classList.remove('opacity-0', 'pointer-events-none');
+            floatFormCard.classList.remove('scale-95');
+            document.body.classList.add('overflow-hidden');
+        };
+
+        const closeFloatForm = () => {
+            floatFormContainer.classList.add('opacity-0', 'pointer-events-none');
+            floatFormCard.classList.add('scale-95');
+            document.body.classList.remove('overflow-hidden');
+        };
+
+        serviceButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const service = btn.getAttribute('data-service');
+                openFloatForm(service);
+            });
+        });
+
+        if(closeFloatFormBtn) closeFloatFormBtn.addEventListener('click', closeFloatForm);
+        floatFormContainer.addEventListener('click', (e) => {
+            if (e.target === floatFormContainer) closeFloatForm();
+        });
+
+        // --- ADDITION CAPTCHA LOGIC (CONTACT) ---
+        const captchaQuestion = document.getElementById('captcha-question');
+        let captchaResult = 0;
+
+        function generateCaptcha() {
+            const n1 = Math.floor(Math.random() * 10);
+            const n2 = Math.floor(Math.random() * 10);
+            captchaResult = n1 + n2;
+            if(captchaQuestion) captchaQuestion.textContent = `${n1} + ${n2}`;
+        }
+        generateCaptcha();
+
+        const contactForm = document.getElementById('contact-form');
+        if(contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const userCaptcha = parseInt(document.getElementById('captcha').value);
+                if(userCaptcha !== captchaResult) {
+                    document.getElementById('captcha-error').classList.remove('hidden');
+                    return;
+                }
+                document.getElementById('captcha-error').classList.add('hidden');
+                
+                const text = `*New Makrisystem Inquiry*\n\n` +
+                             `*Name:* ${document.getElementById('name').value}\n` +
+                             `*Company:* ${document.getElementById('company').value}\n` +
+                             `*Email:* ${document.getElementById('email').value}\n` +
+                             `*Phone:* ${document.getElementById('phone').value}\n` +
+                             `*Message:* ${document.getElementById('message').value}`;
+                
+                showToast('success');
+                setTimeout(() => {
+                    window.open(`https://wa.me/${WHATSAPP_NUM}?text=${encodeURIComponent(text)}`, '_blank');
+                }, 1000);
+            });
+        }
+
+        // --- FLOAT CAPTCHA LOGIC (SERVICES) ---
+        let floatCaptchaCode = "";
+        const floatCaptchaSpan = document.getElementById('float-captcha-code');
+
+        function genFloatCaptcha() {
+            floatCaptchaCode = Math.floor(10000 + Math.random() * 90000).toString();
+            if(floatCaptchaSpan) floatCaptchaSpan.textContent = floatCaptchaCode;
+        }
+        genFloatCaptcha();
+        document.getElementById('refresh-float-captcha').addEventListener('click', genFloatCaptcha);
+
+        if(floatForm) {
+            floatForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const fcap = document.getElementById('float-captcha').value;
+                if(fcap !== floatCaptchaCode) {
+                    alert("Incorrect captcha code");
+                    return;
+                }
+
+                const text = `*Makrisystem Service Request*\n\n` +
+                             `*Client:* ${document.getElementById('first-name').value} ${document.getElementById('last-name').value}\n` +
+                             `*Company:* ${document.getElementById('float-company').value}\n` +
+                             `*Service:* ${serviceSelect.value}\n` +
+                             `*Message:* ${document.getElementById('float-message').value}`;
+
+                showToast('success');
+                setTimeout(() => {
+                    closeFloatForm();
+                    window.open(`https://wa.me/${WHATSAPP_NUM}?text=${encodeURIComponent(text)}`, '_blank');
+                }, 1000);
+            });
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const banner = document.getElementById('cookie-consent-banner');
+        const acceptBtn = document.getElementById('accept-cookies-btn');
+
+        const setCookie = (name, value, days) => {
+            let expires = "";
+            if (days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "")  + expires + "; path=/; SameSite=Lax";
+        };
+
+        const getCookie = (name) => {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        };
+
+        if (acceptBtn) {
+            acceptBtn.addEventListener('click', () => {
+                setCookie('cookies_accepted', 'true', 365);
+                banner.classList.add('translate-y-full');
+            });
+        }
+
+        if (!getCookie('cookies_accepted')) {
+            setTimeout(() => {
+               if(banner) banner.classList.remove('translate-y-full');
+            }, 1500);
+        }
+    });
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Makrisystem",
+  "url": "https://makrisystem.com/en/",
+  "logo": "https://i.postimg.cc/nzNyNBBd/Makri-logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+58-414-1747995",
+    "contactType": "customer service",
+    "email": "reclutamiento.makri@outlook.com",
+    "availableLanguage": ["English", "Spanish"]
+  },
+  "sameAs": [
+    "https://www.facebook.com/makrisystem",
+    "https://www.instagram.com/makrisystem"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://makrisystem.com/en/",
+  "name": "Makrisystem",
+  "description": "Your Bridge to Latin American Professional Talent",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://makrisystem.com/en/index.html?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Business Outsourcing",
+  "provider": {
+    "@type": "Organization",
+    "name": "Makrisystem"
+  },
+  "areaServed": ["North America", "Europe", "Latin America"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Outsourcing Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Inbound and Outbound Customer Service"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Virtual Assistant and Administrative Support"
+        }
+      }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What type of companies benefit from your services?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Our services are ideal for medium and large companies in North America and Europe looking to optimize costs and access qualified professional talent from Latin America."
+    }
+  }, {
+    "@type": "Question",
+    "name": "How do you guarantee the quality of talent?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We guarantee quality through a rigorous recruitment and certification process, evaluating technical and soft skills with constant monitoring."
+    }
+  }, {
+    "@type": "Question",
+    "name": "What data security measures do you implement?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We implement robust protocols such as encryption, secure networks (VPN), strict access controls, and compliance with international regulations like GDPR."
+    }
+  }]
+}
+</script>
+    
+</body>
+
+</html>
+

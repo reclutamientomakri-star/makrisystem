@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="canonical" href="https://makrisystem.com/politicas.html">
+    <link rel="alternate" hreflang="es" href="https://makrisystem.com/politicas.html">
+    <link rel="alternate" hreflang="en" href="https://makrisystem.com/en/politicas.html">
+    <link rel="alternate" hreflang="x-default" href="https://makrisystem.com/politicas.html">
+
+    <link rel="shortcut icon" href="https://i.postimg.cc/d32v1kW9/ico.jpg" type="image/x-icon">
+    
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">  
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Políticas de Privacidad | Makrisystem</title>
+    <meta name="description" content="Conoce las políticas de privacidad de Makrisystem">
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta property='og:title' content='Políticas de Privacidad | Makrisystem'>
+    <meta property='og:description' content='Conoce las políticas de privacidad de Makrisystem'>
+    <meta property='og:image' content='https://i.postimg.cc/Fsq6ksSH/ogg.jpg'>
+    <meta property='og:url' content='https://makrisystem.com/politicas.html'>
+    <meta property='og:type' content='website'>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LNH1NXPVTJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LNH1NXPVTJ');
+    </script>
+</head>
+
+<body class="text-gray-700">
+
+    <div id="form-success" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-green-600 text-white text-center p-8 rounded-xl shadow-2xl z-[60] transition-opacity duration-300 opacity-0 pointer-events-none">
+        <h3 class="text-2xl font-bold mb-2">¡Enviado!</h3>
+        <p>Redirigiendo a WhatsApp...</p>
+    </div>
+
+    <div id="float-form-container" class="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center p-4 transition-opacity duration-300 opacity-0 pointer-events-none">
+        <div id="float-form-card" class="bg-white p-8 rounded-lg shadow-2xl text-gray-800 w-full max-w-2xl relative transform scale-95 transition-transform duration-300 max-h-[90vh] overflow-y-auto">
+            <button id="close-float-form" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800 text-3xl z-10">&times;</button>
+            <h2 class="text-2xl font-bold text-base mb-6">Solicitar Servicio</h2>
+            <form id="float-contact-form" novalidate>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <input type="text" id="first-name" class="w-full px-4 py-2 border rounded-md" placeholder="Nombre" required>
+                    <input type="text" id="last-name" class="w-full px-4 py-2 border rounded-md" placeholder="Apellido" required>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <input type="text" id="float-company" class="w-full px-4 py-2 border rounded-md" placeholder="Empresa" required>
+                    <input type="email" id="float-email" class="w-full px-4 py-2 border rounded-md" placeholder="Correo" required>
+                </div>
+                <div class="mb-4">
+                    <select id="service-type" class="w-full px-4 py-2 border rounded-md bg-white">
+                        <option value="">Seleccione un servicio</option>
+                        <option value="Atención al Cliente">Atención al Cliente</option>
+                        <option value="Asistente Virtual">Asistente Virtual</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <textarea id="float-message" rows="3" class="w-full px-4 py-2 border rounded-md" placeholder="Mensaje..."></textarea>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 items-center">
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Código: <span id="float-captcha-code" class="font-bold"></span></label>
+                        <input type="text" id="float-captcha" class="w-full px-4 py-2 border rounded-md">
+                    </div>
+                    <button type="button" id="refresh-float-captcha" class="text-secondary text-xl"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <button type="submit" class="w-full bg-secondary text-white py-3 rounded-md font-bold">Enviar Solicitud</button>
+            </form>
+        </div>
+    </div>
+ <!-- ===== Header ===== -->
+           
+     <header id="header" class="fixed top-0 left-0 right-0 z-30 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="./" class="flex items-center">
+                <img src="https://i.postimg.cc/nzNyNBBd/Makri-logo.png" alt="Logo de Makri" id="header-logo" class="h-10 md:h-12 transition-all duration-300">
+            </a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="./#about" class="text-white hover:text-secondary transition-colors duration-300 font-medium">Nosotros</a>
+                <div class="relative group">
+                    <button class="text-white hover:text-secondary transition-colors duration-300 font-medium flex items-center">
+                        <span>Servicios</span> <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                    </button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-56 bg-white rounded-md shadow-lg pb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                        <a href="./#services" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-secondary">Atención al Cliente</a>
+                        <a href="./#services" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-secondary">Asistente Virtual</a>
+                    </div>
+                </div>
+                <a href="./#testimonials" class="text-white hover:text-secondary transition-colors duration-300 font-medium">Clientes</a>
+                <a href="empleo.html" class="text-white hover:text-secondary transition-colors duration-300 font-medium">Empleo</a>
+                <div class="relative group">
+                    <button class="text-white hover:text-secondary transition-colors duration-300 font-medium flex items-center">
+                        LAN <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                    </button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-40 bg-white rounded-md shadow-lg pb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                        <a href="./" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-secondary">
+                            <img src="https://flagcdn.com/w20/es.png" alt="Bandera de España" class="mr-2"> Español
+                        </a>
+                        <a href="./en/" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-secondary">
+                            <img src="https://flagcdn.com/w20/gb.png" alt="Bandera de Reino Unido" class="mr-2"> English
+                        </a>
+                    </div>
+                </div>
+                <a href="./#contact" class="bg-secondary text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300 font-semibold shadow-lg">Contacto</a>
+            </div>
+            <button id="mobile-menu-button" class="lg:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-60 z-40 hidden"></div>
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-72 bg-base p-8 z-50 transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden overflow-y-auto">
+        <button id="close-menu-button" class="absolute top-5 right-5 text-white hover:text-secondary">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <nav class="mt-16 flex flex-col space-y-2 text-white">
+            <a href="./#about" class="block py-3 text-xl hover:text-secondary transition-colors">Nosotros</a>
+            <div>
+                <button class="accordion-toggle w-full flex justify-between items-center py-3 text-xl hover:text-secondary transition-colors">
+                    <span>Servicios</span>
+                    <i class="accordion-arrow fas fa-chevron-down text-sm transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content pl-4">
+                    <a href="./#services" class="block py-2 text-lg hover:text-secondary transition-colors">Atención al Cliente</a>
+                    <a href="./#services" class="block py-2 text-lg hover:text-secondary transition-colors">Asistente Virtual</a>
+                </div>
+            </div>
+            <a href="./#testimonials" class="block py-3 text-xl hover:text-secondary transition-colors">Clientes</a>
+            <a href="empleo.html" class="block py-3 text-xl hover:text-secondary transition-colors">Empleo</a>
+            <div>
+                <button class="accordion-toggle w-full flex justify-between items-center py-3 text-xl hover:text-secondary transition-colors">
+                    <span>LAN</span>
+                    <i class="accordion-arrow fas fa-chevron-down text-sm transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content pl-4">
+                    <a href="./" class="flex items-center py-2 text-lg hover:text-secondary transition-colors">
+                        <img src="https://flagcdn.com/w20/es.png" alt="Bandera de España" class="mr-3"> Español
+                    </a>
+                    <a href="./en/" class="flex items-center py-2 text-lg hover:text-secondary transition-colors">
+                       <img src="https://flagcdn.com/w20/gb.png" alt="Bandera de Reino Unido" class="mr-3"> English
+                   </a>
+               </div>
+           </div>
+           <a href="./#contact" class="mt-6 block py-3 px-4 bg-secondary font-semibold rounded-full text-center hover:bg-opacity-90 transition-all">Contacto</a>
+       </nav>
+   </div>
+
+    <section class="hero-bg min-h-[40vh] flex items-center pt-20">
+        <div class="container mx-auto px-6 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Políticas de Privacidad</h1>
+            <p class="text-lg opacity-90">Transparencia y seguridad en el manejo de tu información.</p>
+        </div>
+    </section>
+
+    <main class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl leading-relaxed text-gray-700">
+            <div class="mb-12 text-center">
+                <p class="text-sm font-bold text-secondary uppercase tracking-widest">Makri System</p>
+                <p class="text-gray-400">Última actualización: 28 de Septiembre de 2025</p>
+            </div>
+
+            <div class="space-y-10">
+                <section>
+                    <h3 class="text-2xl font-bold text-base mb-4">1. Introducción</h3>
+                    <p>Bienvenido a Makri System. Nos comprometemos a proteger la privacidad de nuestros clientes, socios y visitantes de nuestro sitio web. Esta Política de Privacidad describe cómo recopilamos, usamos, protegemos y compartimos su información personal cuando utiliza nuestros servicios o interactúa con nuestro sitio web.</p>
+                </section>
+
+                <section>
+                    <h3 class="text-2xl font-bold text-base mb-4">2. Información que Recopilamos</h3>
+                    <ul class="list-disc pl-6 space-y-3">
+                        <li><strong>Información de Contacto:</strong> Nombre, email, teléfono y empresa proporcionados en formularios.</li>
+                        <li><strong>Información Técnica:</strong> Dirección IP, tipo de navegador y datos de navegación mediante cookies.</li>
+                        <li><strong>Información Profesional:</strong> CVs y perfiles enviados para vacantes de empleo.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="text-2xl font-bold text-base mb-4">3. Cómo Usamos tu Información</h3>
+                    <p>Utilizamos los datos para gestionar servicios de outsourcing, responder consultas, evaluar candidatos y mejorar la experiencia de usuario en nuestro portal.</p>
+                </section>
+
+                <section>
+                    <h3 class="text-2xl font-bold text-base mb-4">4. Seguridad y Compartición</h3>
+                    <p>No vendemos tus datos. Compartimos información solo con proveedores esenciales (hosting/email) bajo acuerdos de confidencialidad o con clientes en procesos de selección de personal.</p>
+                </section>
+
+                <section class="p-6 bg-gray-50 rounded-xl border-l-4 border-secondary">
+                    <h3 class="text-xl font-bold text-base mb-2">Contacto de Privacidad</h3>
+                    <p>Para ejercer sus derechos de acceso o eliminación, escriba a: <br>
+                    <a href="mailto:reclutamiento.makri@outlook.com" class="font-bold text-secondary underline">reclutamiento.makri@outlook.com</a></p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+   <footer class="bg-gray-800 text-gray-300">
+    <div class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <img src="https://i.postimg.cc/nzNyNBBd/Makri-logo.png" alt="Logo" class="h-10 mb-4 filter brightness-0 invert">
+                <p class="text-sm">Conectamos empresas de Norteamérica y Europa con talento latinoamericano.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white mb-4">Enlaces</h4>
+                <ul class="space-y-2">
+                    <li><a href="./index.html" class="hover:text-secondary">Inicio</a></li>
+                    <li><a href="politicas.html" class="hover:text-secondary">Privacidad</a></li>
+                    <li><a href="terminos.html" class="hover:text-secondary">Términos</a></li>
+                    <li><a href="empleo.html" class="hover:text-secondary">Empleo</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white mb-4">Contacto</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>Cabimas, Estado Zulia. Venezuela</li>
+                    <li>reclutamiento.makri@outlook.com</li>
+                    <li>+58 (0414) 1747995</li>
+                </ul>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-secondary"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-secondary"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-gray-700 pt-8 text-center text-sm">
+            <p>&copy; 2025 Makri Outsourcing. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+    <div id="whatsappIcon" class="whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+        <span id="notificationBadge" class="notification-badge">1</span>
+        <div id="whatsappPush" class="whatsapp-push"><span>¿Dudas sobre privacidad?</span></div>
+    </div>
+
+    <div id="chatContainer" class="chat-container">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="profile-pic-container">
+                    <img src="https://i.postimg.cc/k5C1Ljrn/maybe.jpg" alt="Asistente" class="profile-pic">
+                    <span class="online-indicator"></span>
+                </div>
+                <span>Asistente En Linea</span>
+            </div>
+            <button id="closeChatBtn" class="close-btn">&times;</button>
+        </div>
+        <div id="chatMessages" class="chat-messages"></div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Escribe un mensaje...">
+            <button id="sendMessageBtn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <section id="cookie-consent-banner" class="fixed bottom-0 left-0 right-0 bg-base text-white p-6 z-50 transform translate-y-full transition-transform duration-500">
+        <div class="container mx-auto flex flex-col items-center gap-4">
+            <p class="text-sm">Usamos cookies para mejorar tu experiencia. <a href="politicas.html" class="font-bold underline">Ver más</a>.</p>
+            <button id="accept-cookies-btn" class="bg-secondary px-6 py-2 rounded-full font-bold">Aceptar</button>
+        </div>
+    </section>
+
+    <script src="js/notifications_floats.js"></script>
+    <script src="js/menu_header.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/noclick.js"></script>
+
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const WHATSAPP_NUM = "5804141747995";
+            
+            // Lógica Captcha Float
+            let floatCaptchaCode = "";
+            const captchaSpan = document.getElementById('float-captcha-code');
+            function genCaptcha() {
+                floatCaptchaCode = Math.floor(1000 + Math.random() * 9000).toString();
+                if(captchaSpan) captchaSpan.textContent = floatCaptchaCode;
+            }
+            genCaptcha();
+            document.getElementById('refresh-float-captcha').addEventListener('click', genCaptcha);
+
+            // Redirección WhatsApp Form Float
+            document.getElementById('float-contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                if(document.getElementById('float-captcha').value !== floatCaptchaCode) {
+                    alert("Código incorrecto."); return;
+                }
+                const text = `*Solicitud de Servicio*\n\nNombre: ${document.getElementById('first-name').value}\nEmpresa: ${document.getElementById('float-company').value}`;
+                window.open(`https://wa.me/${WHATSAPP_NUM}?text=${encodeURIComponent(text)}`, '_blank');
+            });
+
+            // Banner Cookies
+            const banner = document.getElementById('cookie-consent-banner');
+            if(!document.cookie.includes('cookies_accepted')) {
+                setTimeout(() => banner.classList.remove('translate-y-full'), 1500);
+            }
+            document.getElementById('accept-cookies-btn').addEventListener('click', () => {
+                document.cookie = "cookies_accepted=true; max-age=" + 365*24*60*60 + "; path=/";
+                banner.classList.add('translate-y-full');
+            });
+        });
+    </script>
+</body>
+</html>
